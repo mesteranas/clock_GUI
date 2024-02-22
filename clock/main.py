@@ -18,6 +18,8 @@ class main (qt.QMainWindow):
         self.tab.setAccessibleName(_("select 1"))
         self.tab.addTab(gui.tabs.CurrentClock(self),_("current clock"))
         self.tab.addTab(gui.tabs.StopWatch(self),_("stop watch"))
+        self.tab.addTab(gui.tabs.Timer(self),_("timer"))
+        self.tab.addTab(gui.tabs.Clocks(self),_("Clock"))
         layout.addWidget(self.tab)
         self.setting=qt.QPushButton(_("settings"))
         self.setting.setDefault(True)
