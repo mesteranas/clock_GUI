@@ -15,7 +15,7 @@ class CurrentClock(qt.QWidget):
         self.timer.start(10000)
     def change(self):
         self.list.clear()
-        time=datetime.datetime.now().strftime("%H : %M : %S %p")
+        time=datetime.datetime.now().strftime("%I : %M : %S %p")
         date = datetime.datetime.now().strftime("%d/%m/%Y")
         hijriDate=str(hijri_converter.Hijri.today()).split("-")
         weekday_names = [_("Monday"), _("Tuesday"), _("Wednesday"), _("Thursday"), _("Friday"), _("Saturday"), _("Sunday")]
